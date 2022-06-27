@@ -4,12 +4,12 @@
 }
 
 .container {
-  margin: 0 360px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.app__wrapper {
+.app__wrapper { 
   display: grid;
-  max-width: 1200px;
 
   grid-template-areas:
   "h h"
@@ -21,25 +21,13 @@
 
 }
 
-
-
-.header {
-  grid-area: h;
-  background-color: blue;
+.app__wrapper-content {
+    width: 100%;
+    grid-area: c;
+    background-color:red;
 }
 
-.header img {
-  width: 40px;
-}
 
-.nav {
-  grid-area: n;
-  background-color:brown;
-}
 
-.content {
-  width: 100%;
-  grid-area: c;
-  background-color:red;
-}
+
 
