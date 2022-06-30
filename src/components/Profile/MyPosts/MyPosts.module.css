@@ -1,5 +1,10 @@
 .content {
     width: 100%;
     grid-area: c;
-    background-color:red;
+    background-color:#316d92;
   }
+
+textarea {
+  margin-left: 5px;
+  border-radius: 5px;
+}

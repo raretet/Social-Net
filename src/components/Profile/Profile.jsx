@@ -1,14 +1,11 @@
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import MyPosts from "./MyPosts/MyPosts";
-import s from "./Profile.module.css";
 
-function Profile() {
+function Profile(props) {
   return (
     <div>
-      <div>
-        <img src="https://via.placeholder.com/800x300" alt="main" />
-      </div>
-      <div>ava + desc</div>
-      <MyPosts />
+      <ProfileInfo />
+      <MyPosts posts={props.state.posts} />
     </div>
   );
 }

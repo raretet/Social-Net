@@ -1,9 +1,16 @@
 .nav {
     grid-area: n;
-    background-color:brown;
+    background-color:#316d92;
+    border-radius: 5px;
+    border: 1px solid #8d9ea5;
 }
 
-.nav__item a {
+.item a {
     text-decoration: none;
     color: white;
+    padding-left: 20px;
+}
+
+.item a.active {
+    color: #031019;
 }

@@ -1,3 +1,9 @@
 .posts__item {
     color: aqua;
 }
+
+input {
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}

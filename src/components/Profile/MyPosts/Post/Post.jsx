@@ -7,8 +7,6 @@ function Post(props) {
       <div>
         <span>{props.like}</span>
       </div>
-      <input />
-      <input />
     </div>
   );
 }
