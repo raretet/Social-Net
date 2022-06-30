@@ -1,20 +1,20 @@
 .sidebar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .sidebar__friends {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; */
 }
 
 .photo {
     background-color: #8d9ea5;
     border-radius: 50%;
     max-width: 40px;
+
 }
 
-.name {
+/* .name {
     padding: 20px;
-}
+} */

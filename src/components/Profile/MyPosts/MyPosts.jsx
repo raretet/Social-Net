@@ -1,3 +1,4 @@
+import React from "react";
 import c from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
@@ -6,15 +7,25 @@ function MyPosts(props) {
     return <Post message={p.message} like={p.likesCount} />;
   });
 
+  let newPostElement = React.createRef();
+
   let addPost = () => {
-    alert(1);
+    props.addPosts();
+  };
+
+  let onPostChange = () => {
+    let text = newPostElement.current.value;
+    props.updateNewPostText(text);
   };
 
   return (
     <div>
-      <textarea></textarea>
+      <textarea
+        ref={newPostElement}
+        value={props.newPostText}
+        onChange={onPostChange}
+      />
       <button onClick={addPost}>Add post</button>
-      <button>Remove</button>
       <div>new post</div>
       <div className={c.posts}>{postsELements}</div>
     </div>
