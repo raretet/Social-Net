@@ -1,6 +1,6 @@
 
 import './index.css';
-import store from './Redux/state';
+import store from './Redux/store';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -13,7 +13,7 @@ let rerenderEntireTree = (state) => {
       root.render(
         <React.StrictMode>
           <BrowserRouter>
-          <App state={state} dispatch={store.dispatch.bind(store)}/>
+          <App state={state} dispatch={store.dispatch.bind(store)} store={store}/>
           </BrowserRouter>
         </React.StrictMode>
   );
