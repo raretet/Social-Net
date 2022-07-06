@@ -1,21 +1,21 @@
-let initialState = {       friends: [{
-    id: 1,
-    name: 'Alex',
-},
-{
-    id: 2,
-    name: 'Rusya',
-},
-{
-    id: 3,
-    name: 'Kristina',
-},
-]};
+// let initialState = {    sidebar: {
+//     friends: [{
+//         id: 1,
+//         name: 'Alex',
+//     },
+//     {
+//         id: 2,
+//         name: 'Rusya',
+//     },
+//     {
+//         id: 3,
+//         name: 'Kristina',
+//     },
+// ]
+// },};
 
-const SidebarReducer = ( state = initialState, action) => {
+// const SidebarReducer = ( state = initialState, action) => {
+//     return state;
+// }
 
-
-    return state;
-}
-
-export default SidebarReducer;
+// export default SidebarReducer;

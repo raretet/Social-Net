@@ -1,6 +1,5 @@
 import c from "./Navigation.module.css";
 import { NavLink } from "react-router-dom";
-import Sidebar from "./Sidebar/Sidebar";
 
 function Navigation(props) {
   return (
@@ -45,7 +44,7 @@ function Navigation(props) {
           Settings
         </NavLink>
       </div>
-      <Sidebar friends={props.state.friends} />
+      {/* <Sidebar friends={props.state.friends} /> */}
     </nav>
   );
 }
