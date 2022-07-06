@@ -67,6 +67,7 @@ _state: {
               name: "Rusya",
             },
           ], newMessageText: '',},
+
     sidebar: {
         friends: [{
             id: 1,
