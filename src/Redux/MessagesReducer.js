@@ -55,16 +55,15 @@ let initialState =  {messagesData: [
     ], newMessageText: '',};
 
 const MessagesReducer = ( state = initialState, action) => {
-
     switch(action.type) {
         case UPDATE_NEW_MESSAGE_TEXT:
-            state.newMessageText = action.body;
-            return state;
+            return {...state, newMessageText: action.body};
         case SEND_MESSAGE:
             let body = state.newMessageText;
-            state.newMessageText = '';
-            state.messagesData.push({id: 6, message: body});
-            return state;
+            return {...state, 
+            newMessageText: '',
+            messagesData: [...state.messagesData,{id: 6, message: body}],
+          };
         default: 
         return state;
     }

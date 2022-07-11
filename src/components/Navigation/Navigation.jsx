@@ -22,10 +22,10 @@ function Navigation(props) {
       </div>
       <div className={c.item}>
         <NavLink
-          to="i"
+          to="/Users"
           className={(navData) => (navData.isActive ? c.active : c.item)}
         >
-          News
+          Users
         </NavLink>
       </div>
       <div className={c.item}>
