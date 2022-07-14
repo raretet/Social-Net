@@ -12,3 +12,11 @@
 .header img {
   margin: 8px 0px 0px 10px
 }
+
+.login_block {
+  float: right;
+}
+
+.login_block a {
+  color: white;
+}
