@@ -1,4 +1,5 @@
 import { connect } from "react-redux";
+import { WithAuthNavigate } from "../../hoc/WithAuthReducer";
 import {
   sendMessageCreator,
   updateNewMessageTextCreator,
@@ -22,6 +23,11 @@ let mapDispatchToProps = (dispatch) => {
   };
 };
 
-const DialogsContainer = connect(mapStateToProps, mapDispatchToProps)(Dialogs);
+let AuthNavigateComponent = WithAuthNavigate(Dialogs);
+
+const DialogsContainer = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(AuthNavigateComponent);
 
 export default DialogsContainer;
