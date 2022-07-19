@@ -8,9 +8,9 @@ const ProfileInfo = (props) => {
 
   return (
     <div className={c.profile__info}>
-      <div>
+      {/* <div>
         <img src="https://via.placeholder.com/800x300" alt="main" />
-      </div>
+      </div> */}
       <div>
         <img src={props.profile.photos.large} alt="profile" />
         {props.profile.aboutMe}
